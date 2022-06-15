@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>livePost</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+
+  <header id="head-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" style="color: darkblue !important" href="index.html">livePost</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view.html">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Your Post</a>
+            </li>
+          </ul>
+          <div class="d-flex trophy">
+            <img src="img/trophy.png" alt="" class="image-fluid">
+            <img src="img/ball.webp" alt="" class="image-fluid">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="trending-section" class="" style="background-color: rgb(244, 250, 250) !important">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-1 fw-bold mt-5" style="color: darkblue !important">
+          Welcome to livePost
+        </h1>
+        <p class="fs-4 text-secondary" style="color: rgb(145, 145, 224) !important">
+          a home to your thought on live matches!
+        </p>
+      </div>
+    
+      <div class="edit-section">
+        <div class="row mt-3">
+          <div class="image-flip col-lg-6 col-md-6 col-12">
+            <div class="swiper mySwiper text-danger text-center fs-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/quatar.webp" class="image-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/champs.jpg" class="image-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/liga.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/barclays.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/ligue.jpg" />
+                </div>  
+                <div class="swiper-slide">
+                  <img src="img/serie.jpg" />
+                </div>  
+                <div class="swiper-slide">
+                  <img src="img/bundes.png" />
+                </div>  
+              </div>  
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <h2 style="color: darkblue !important">What's on your mind?</h2>
+            <form action="" id="post-form">
+              <div class="mb-3 fw-bold" style="color: darkblue !important">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter your title">
+              </div>
+              <div class="mb-3 fw-bold fw-bold" style="color: darkblue !important">
+                <label for="exampleFormControlTextarea1" class="form-label">livePost</label>
+                <textarea class="form-control" id="body" rows="3"></textarea>
+              </div>
+              <div class="d-flex justify-content-center mb-4">           
+                <button class="btn me-2" style="background-color: rgb(17, 17, 73) !important; color: white;" type="submit">Create Post</button>           
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <div class="">
+    <img src="img/ronaldo.jpg" alt="">
+  </div>
+
+
+  <footer class="text-center text-white" style="background-color: rgb(17, 17, 73) !important">
+    <div class="container py-4">
+      <small>
+        livePost is a unique online site aimed at bringing football fans all around the world together as they watch their favorite teams and players. All posts can be created, edited saved and deleted at anytime.
+      </small>
+      <div class= "text-center pt-2">
+        <a href="https://twitter.com/_asafesquare_" class="text-white me-4">
+          <i class="fa fa-twitter"> </i>
+        </a>
+        <a href="https://www.instagram.com/_asafesquare_/" class="text-white me-4">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/fredrick-ezeafulukwe-5bb0bb235/" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/86298f4f11.js" crossorigin="anonymous"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "flip",
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html> -->
