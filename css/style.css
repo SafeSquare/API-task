@@ -20,6 +20,10 @@ img {
   border-radius: 50px;
 }
 
+.card-section {
+  min-height: 100vh;
+}
+
 @media (max-width: 768px) {
   .trophy img {
     display: none !important;
