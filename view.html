@@ -1,88 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>livePosts</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-
-  <header id="head-section">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">livePost</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ative fw-bold" href="#">Trending</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="post.html">Your post</a>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>livePost</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="head-section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand fw-bold fs-3"
+            style="color: darkblue !important"
+            href="index.html"
+            >livePost</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="post.html">livePost</a>
+              </li>
+            </ul>
+            <div class="d-flex trophy">
+              <img src="img/trophy.png" alt="" class="image-fluid" />
+              <img src="img/ball.webp" alt="" class="image-fluid" />
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <section id="hero-section">
-    <div class="container mt-5">
-    <div class="text-center">
+      <img src="img/cr7.jpg" alt="" />
 
-        <div class="view-section">
-          <h3 class="my-5 text-primary pt-3">Recent Posts</h3>
-          <div id="post-holder" class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p>1</p>
-                  <h5 id="post-title">Ronaldo's Hart-trick</h5>
-                  <p id="post-body">Another record set in Old trafford, many more to come! There is no argument to the fact that there is none like cr7! Glory now rests in Old trafford</p>
-                  <div class="d-flex justify-content-center mb-4">           
-                    <button class="btn btn-warning me-2" type="">Edit</button>
-                    <button class="btn btn-primary me-2" type="">Save</button>           
-                    <button class="btn btn-danger me-2" type="">Delete</button>           
-                </div>
+    <section style="background-color: rgb(248, 250, 251);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">
+                  Another record set in Old trafford, many more to come! There is
+                  no argument to the fact that there is none like cr7! Glory now
+                  rests in Old trafford
+                </p>
+                <button class="btn btn-primary" type="">View</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </section>
+    </section> -->
 
-  <footer class="text-center text-white" style="background-color: rgb(17, 17, 73) !important">
-    <div class="container py-4">
-      <small>
-        livePost is a unique online site aimed at bringing football fans all around the world together as they watch their favorite teams and players. All posts can be created, edited saved and deleted at anytime.
-      </small>
-      <div class= "text-center pt-2">
-        <a href="https://twitter.com/_asafesquare_" class="text-white me-4">
-          <i class="fa fa-twitter"> </i>
-        </a>
-        <a href="https://www.instagram.com/_asafesquare_/" class="text-white me-4">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fa fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/fredrick-ezeafulukwe-5bb0bb235/" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
+    <footer
+      class="text-center text-white"
+      style="background-color: rgb(17, 17, 73) !important"
+    >
+      <div class="container py-4">
+        <small>
+          livePost is a unique online site aimed at bringing football fans all
+          around the world together as they watch their favorite teams and
+          players. All posts can be created, edited saved and deleted at
+          anytime.
+        </small>
+        <div class="text-center pt-2">
+          <a href="https://twitter.com/_asafesquare_" class="text-white me-4">
+            <i class="fa fa-twitter"> </i>
+          </a>
+          <a
+            href="https://www.instagram.com/_asafesquare_/"
+            class="text-white me-4"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fredrick-ezeafulukwe-5bb0bb235/"
+            class="text-white me-4"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/86298f4f11.js" crossorigin="anonymous"></script>
-</body>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86298f4f11.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -11,7 +11,6 @@
 </head>
 <body>
 
-
   <header id="head-section">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
@@ -20,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
             </li>
@@ -28,7 +27,7 @@
               <a class="nav-link" href="view.html">Trending</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Your Post</a>
+              <a class="nav-link" href="post.html">livePost</a>
             </li>
           </ul>
           <div class="d-flex trophy">
@@ -40,21 +39,25 @@
     </nav>
   </header>
 
-  <section id="trending-section" class="" style="background-color: rgb(244, 250, 250) !important">
+  <section id="trending-section" class="pt-5" style="background-color: rgb(245, 249, 250)">
     <div class="container">
       <div class="text-center">
-        <h1 class="display-1 fw-bold mt-5" style="color: darkblue !important">
+        <h1 class="display-1 fw-bold pt-3" style="color: darkblue !important">
           Welcome to livePost
         </h1>
         <p class="fs-4 text-secondary" style="color: rgb(145, 145, 224) !important">
           a home to your thought on live matches!
         </p>
       </div>
-    
+    </div>
+    <div>
+      <img src="img/lady.jpg" alt="">
+    </div>
+    <div class="container">
       <div class="edit-section">
-        <div class="row mt-3">
+        <div class="row mt-5 pt-3">
           <div class="image-flip col-lg-6 col-md-6 col-12">
-            <div class="swiper mySwiper text-danger text-center fs-5">
+            <div class="swiper mySwiper h-100 text-danger text-center fs-5">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="img/quatar.webp" class="image-fluid" alt="" />
@@ -63,26 +66,25 @@
                   <img src="img/champs.jpg" class="image-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/liga.jpg" />
+                  <img src="img/liga.jpg" class="image-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/barclays.jpg" />
+                  <img src="img/barclays.jpg" class="image-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/ligue.jpg" />
+                  <img src="img/ligue.jpg" class="image-fluid" alt="" />
                 </div>  
                 <div class="swiper-slide">
-                  <img src="img/serie.jpg" />
+                  <img src="img/serie.jpg" class="image-fluid" alt="" />
                 </div>  
                 <div class="swiper-slide">
-                  <img src="img/bundes.png" />
+                  <img src="img/bundes.png" class="image-fluid" alt="" />
                 </div>  
               </div>  
             </div>
           </div>
-
+  
           <div class="col-lg-6 col-md-6 col-12">
-            <h2 style="color: darkblue !important">What's on your mind?</h2>
             <form action="" id="post-form">
               <div class="mb-3 fw-bold" style="color: darkblue !important">
                 <label for="exampleFormControlInput1" class="form-label">Title</label>
@@ -100,13 +102,29 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container mt-5">
+    <div class="text-center">
+      <div class="view-section">
+        <h3 class="my-3 text-primary">All Posts</h3>
+        <div id="post-holder" class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 id="post-title">Ronaldo's Hart-trick</h5>
+                <p id="post-body">Another record set in Old trafford, many more to come! There is no argument to the fact that there is none like cr7! Glory now rests in Old trafford</p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-warning">Update</button>
+                  <button class="btn btn-primary"><a href="post.html" class="text-light" style="text-decoration: none">View</a></button>
+                  <button class="btn btn-danger">Delete</button>
+              </div>                    
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 
-  <div class="">
-    <img src="img/ronaldo.jpg" alt="">
-  </div>
 
-  
   <footer class="text-center text-white" style="background-color: rgb(17, 17, 73) !important">
     <div class="container py-4">
       <small>
@@ -133,7 +151,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/86298f4f11.js" crossorigin="anonymous"></script>
-
   <script>
     var swiper = new Swiper(".mySwiper", {
       effect: "flip",
