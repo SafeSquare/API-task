@@ -14,10 +14,6 @@ img {
   height: 50px !important;
 }
 
-.card-section {
-  min-height: 100vh;
-}
-
 @media (max-width: 768px) {
   .trophy img {
     display: none !important;
