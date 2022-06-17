@@ -10,7 +10,6 @@ function getPosts() {
     .then((response) => response.json())
     .then((data) => {
       console.log(postBox);
-      //    console.log(data)
       postBox = data;
       renderUI(postBox);
     });
@@ -21,7 +20,6 @@ postForm.addEventListener("submit", createPost);
 
 function createPost(e) {
   e.preventDefault();
-  // console.log(title.value, body.value)
   fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     body: JSON.stringify({
@@ -79,7 +77,7 @@ function updatePost(id) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      let postTitles = document.querySelectorAll(".post-title"); // 100 post titles [0 -99]
+      let postTitles = document.querySelectorAll(".post-title");
       let postBodies = document.querySelectorAll(".post-body");
       console.log(postTitles);
       postTitles.forEach((postTitle, index) => {
@@ -108,7 +106,6 @@ function openSingle(id) {
       console.log(data);
       localStorage.setItem("viewedPost", JSON.stringify(data));
       window.location.href = "post.html";
-      // console.log(data)
     });
 }
 openSingle(id);
@@ -122,7 +119,6 @@ function deletePost(id) {
       console.log(data);
       postBox = postBox.filter((post) => post.id !== id);
       console.log(postBox);
-      // use a function to display the UI
       renderUI(postBox);
     });
 }
@@ -135,14 +131,14 @@ function renderUI(arr) {
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h6 class="post-title">${post.title}</h6>
-                                <p class="post-body">${post.body}</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-warning" id="view-btn" onclick="openSingle(${post.id})">update</button>
-                                    <button class="btn btn-primary"><a href="post.html" class="text-light" style="text-decoration: none">View</a></</button>
-                                    <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
-                                </div>
+                              <h6 class="post-title">${post.title}</h6>
+                              <p class="post-body">${post.body}</p>
                             </div>
+                            <div class="d-flex justify-content-around mb-5">
+                            <button class="btn btn-warning" id="view-btn" onclick="openSingle(${post.id})">Update</button>
+                            <button class="btn btn-primary"><a href="#" class="text-light" style="text-decoration: none">View</a></</button>
+                            <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
+                          </div>
                         </div>
                     </div>
                 `;
