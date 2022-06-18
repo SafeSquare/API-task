@@ -42,7 +42,7 @@ function createPost(e) {
                 <div class="col-md-4 mb-3">
                   <div class="card h-100">
                     <div class="card-body">
-                        <p>${post.id}</p>
+                        <p class="text-light">${post.id}</p>
                         <h5 class="post-title">${post.title}</h5>
                         <p class="post-body">${post.body}</p>
                     </div>
@@ -129,7 +129,7 @@ function renderUI(arr) {
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                              <p>${post.id}</p>
+                              <p class="text-light">${post.id}</p>
                               <h5 class="post-title">${post.title}</h5>
                               <p class="post-body">${post.body}</p>
                             </div>
