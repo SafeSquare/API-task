@@ -9,7 +9,7 @@ function getPosts() {
   fetch("https://jsonplaceholder.typicode.com/posts")
     .then((response) => response.json())
     .then((data) => {
-      console.log(postBox);
+      // console.log(postBox);
       postBox = data;
       renderUI(postBox);
     });
@@ -33,9 +33,9 @@ function createPost(e) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       postBox.unshift(data); // Push and Unshift
-      console.log(postBox);
+      // console.log(postBox);
       let postHolder = "";
       postBox.forEach((post) => {
         postHolder += `
@@ -60,7 +60,7 @@ function createPost(e) {
 }
 
 function updatePost(id) {
-  console.log(id);
+  // console.log(id);
 
   fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
     method: 'PUT',
@@ -76,10 +76,10 @@ function updatePost(id) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       let postTitles = document.querySelectorAll('.post-title');
       let postBodies = document.querySelectorAll('.post-body');
-      console.log(postTitles);
+      // console.log(postTitles);
       postTitles.forEach((postTitle, index) => {
         if (index + 1 === id) {
           if (data.title !== "") {
@@ -103,7 +103,7 @@ function openSingle(id) {
   fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       localStorage.setItem("viewedPost", JSON.stringify(data));
       window.location.href = "post.html"; // Move to a different page 
     });
@@ -115,9 +115,9 @@ function deletePost(id) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       postBox = postBox.filter((post) => post.id !== id);
-      console.log(postBox);
+      // console.log(postBox);
       renderUI(postBox);
     });
 }
